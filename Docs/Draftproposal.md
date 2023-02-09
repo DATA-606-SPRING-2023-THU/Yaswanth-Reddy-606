@@ -38,6 +38,7 @@ Planning to use images of these two categories and classify them.
 
 ## 7.How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?
 
+- I plan to use Neural networks to train the mdoel for classification. 
 My plan of action is to analyze the data first, research various types of ML models and come up with the best suited ones and implement a solution for the selected problem.
 
 ## 8.What outcomes do you intend to achieve?
