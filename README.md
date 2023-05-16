@@ -20,6 +20,7 @@ One more advantage is that cleaning robots can quickly identify and classify was
 
 ## DATASET
 Our dataset contains a total of more than 150K images in both bio-degradable and non-biodegradable materials, sourced from the Kaggle open dataset. Link: https://drive.google.com/file/d/1RaXQcHUcVveDjVa09k5Zhn5ZanOuykBY/view?usp=share_link
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.23.31%20AM.png)
 
 Dataset parameters:
 There are two parameters, namely:
@@ -28,6 +29,7 @@ This column contains the local paths for the images which are fed into the model
 2. Label
 This parameter consists of binary numbers 0 and 1. The 0 represents the biodegradable
 image and 1 represents the non-biodegradable image.
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.21.21%20AM.png)
 
 ## DATA COLLECTION AND MODEL MAKING
 Data Collection Process:
@@ -44,17 +46,27 @@ model's precision. By generating fresh data from the base data, data augmentatio
 Simply applying random changes to our images will improve the generalizability of our model.
 Compressions, rotations, stretches, and even color shifts are examples of these transformations.
 We have done this using ImageDataGenerator from tensorflow.keras.preprocessing.image.
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.25.44%20AM.png)
 
 # Training and Testing:
 This is where the data is fit into the training set. Due to the callback's monitoring of the
 validation set, the validation set is also passed. If the loss does not improve after two epochs as
 specified in the EarlyStopping callback, the training process will be terminated by the callback.
 In this scenario, you can define a large number of epochs.
+# Custom model testing and training results
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.26.38%20AM.png)
 
+# VGG model testing and training results
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.28.29%20AM.png)
 ## RESULTS
 We got a total of 90 percent accuracy on the Training dataset and 95 percent accuracy on the
 testing dataset.
 
+# Custom CNN predictions
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.29.36%20AM.png)
+
+# VGG CNN predictions
+![Alt text](https://github.com/DATA-606-SPRING-2023-THU/Yaswanth-Reddy-606/blob/main/Images/Screenshot%202023-05-16%20at%2011.31.05%20AM.png)
 ## IMPACT OF THE PROJECT
 If the model is used in AI-powered trash collectors or classifications, we can save millions of
 trash from getting landfilled. If the bio and non-biodegradable materials are mixed with each
